@@ -22,16 +22,42 @@
             justify-content: space-between;
             align-items: center;
             background-color: #2c3e50;
-            padding: 15px 30px;
+            padding: 5px 30px;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            padding: 10px;
+            border-radius: 8px;
         }
 
         .logo img {
-            width:80px
+            width: 120px;
+            margin-right: 10px;
+        }
+
+        .company {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .company h1 {
+            color: white;
+            font-size: 1.5rem;
+            margin-bottom: 3px;
+        }
+
+        .tagline {
+            font-size: 0.85rem;
+            color: #f39c12;
+            font-weight: bold;
         }
 
         .nav-links {
             list-style: none;
             display: flex;
+            align-items: center;
         }
 
         .nav-links li {
@@ -41,7 +67,7 @@
         .nav-links a {
             text-decoration: none;
             color: white;
-            font-size: 1rem;
+            font-size: 1.2rem;
             transition: 0.3s;
         }
 
@@ -65,7 +91,13 @@
 
 <body>
     <div class="navbar">
-        <div class="logo"><img src="image/logo.svg"></div>
+        <div class="logo">
+            <img src="image/logo.svg" alt="Logo">
+            <div class="company">
+                <h1>StudySphere</h1>
+                <span class="tagline">Your Ultimate Study Companion</span>
+            </div>
+        </div>
         <ul class="nav-links">
             <li><a href="#">Home</a></li>
             <li><a href="#">About Us</a></li>
